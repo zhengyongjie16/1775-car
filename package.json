@@ -1,0 +1,89 @@
+{
+  "name": "car",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "capacitor-copy": "vue-cli-service capacitor-copy",
+    "capacitor-init": "vue-cli-service capacitor-init",
+    "capacitor-open": "vue-cli-service capacitor-open",
+    "capacitor-update": "vue-cli-service capacitor-update"
+  },
+  "dependencies": {
+    "@capacitor/cli": "^1.0.0-alpha.38",
+    "@capacitor/core": "^1.0.0-alpha.38",
+    "@chenfengyuan/vue-qrcode": "^1.0.1",
+    "area-data": "^5.0.6",
+    "axios": "^0.18.0",
+    "core-js": "^2.6.5",
+    "egg-sequelize": "^5.0.0",
+    "element-china-area-data": "^4.1.2",
+    "element-ui": "^2.8.2",
+    "element-ui-area": "^1.0.3",
+    "html2canvas": "^1.0.0-rc.5",
+    "mand-mobile": "^2.5.7",
+    "mysql2": "^1.6.5",
+    "pinyin4js": "^1.3.18",
+    "postcss-px-to-viewport": "^1.1.1",
+    "qrcode.vue": "^1.6.3",
+    "register-service-worker": "^1.6.2",
+    "sequelize": "^5.8.6",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "v-region": "^2.1.3",
+    "v-viewer": "^1.4.1",
+    "vant": "^2.0.6",
+    "vconsole": "^3.3.2",
+    "vue": "^2.6.10",
+    "vue-area-linkage": "^5.1.0",
+    "vue-clipboard2": "^0.3.0",
+    "vue-cookie": "^1.1.4",
+    "vue-cordova": "^0.1.2",
+    "vue-moment": "^4.0.0",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.0.3",
+    "vuedraggable": "^2.21.0",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-plugin-pwa": "^3.9.0",
+    "@vue/cli-service": "^3.7.0",
+    "@vue/eslint-config-airbnb": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass": "^1.54.0",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-pwa": "^1.0.0-alpha.1",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/airbnb"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

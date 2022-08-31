@@ -1,0 +1,30 @@
+$gray:#666666; //统一灰色
+$ora: #f9712c;//统一橙色
+$font:#4A4A4A;//小字颜色--灰
+
+@function vw($px){
+  @return $px/1080*100vw
+}
+
+
+
+.el-picker-panel__body{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.el-date-range-picker__content{
+  width: 100vw;
+}
+.el-picker-panel.el-date-range-picker{
+  left: 0 !important;
+  top:0!important;
+  z-index:99999!important;
+}
+
+.ce {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}

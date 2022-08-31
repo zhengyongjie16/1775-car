@@ -1,0 +1,860 @@
+$gray:#666666; //统一灰色
+$ora: #f9712c;//统一橙色
+$font:#4A4A4A;//小字颜色--灰\
+$navBg:#fff;
+$mainColor:#FF4C4C;
+*{
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+@function vw($px){
+  @return $px/750*100vw
+}
+input{
+  outline: none;
+}
+a{
+  color:#333
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background:rgba(247,247,247,1);
+    box-sizing: border-box;
+    padding-top: constant(safe-area-inset-top)!important;
+    padding-bottom: constant(safe-area-inset-bottom)!important;
+    /* Status bar height on iOS 11+ */
+    padding-top: env(safe-area-inset-top)!important;
+    padding-bottom: env(safe-area-inset-bottom)!important;
+}
+i{
+  font-style: normal;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clear:after{
+  content: '';
+  display: block;
+  clear: both;
+  zoom:1;
+}
+
+ul{
+  list-style: none;
+}
+.carInfo .md-swiper-indicators{
+  display: none;
+}
+
+.worksDetail img{
+  width: 100% !important;
+  height: auto;
+}
+.md-toast-text{
+  color: #fff !important;
+}
+
+
+
+
+
+.el-picker-panel__body{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.el-date-range-picker__content{
+  width: 100vw;
+}
+.el-picker-panel.el-date-range-picker{
+  left: 0 !important;
+  top:0!important;
+  z-index:99999!important;
+}
+
+.ce {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.swBtn{
+  width:688px;
+  height:80px;
+  background:rgba(255,76,76,1);
+  border-radius:16px;
+  margin: 0 auto;
+  color:#fff;
+  font-size: 32px;
+  text-align: center;
+  line-height: 80px;
+}
+.agreement{
+  font-size: 24px;
+  margin-top: 42px;
+}
+.agreement .md-agree-icon{
+  margin-top: -5px;
+}
+.md-landscape-content{
+  box-sizing: border-box;
+  padding: 30px;
+}
+.right .md-icon.icon-font.md{
+  font-size: 20px;
+  font-weight: bold;
+}
+.custom-item{
+  text-align: center;
+}
+.md-example-popup-center{
+  padding: 20px 30px;
+  background: #fff;
+  color: #333;
+  font-size: 28px;
+}
+
+
+
+.AddCar{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  .el-input--medium{
+    font-size: 32px;
+  }
+  .AddCarBox{
+    width: 100%;
+    margin: 0 auto;
+    padding:0 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 0;
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+  .AddCarLi{
+    height: 50px;
+    line-height: 50px;
+    background-color: #F9FAFA;
+    position: relative;
+  }
+  .AddCarLiFon{
+    width: 60px;
+    height: 50px;
+    color: #1B1B1B;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+
+  }
+
+  .AddCarState{
+    margin-top: 5px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .AddCarStateLi{
+    width: 120px;
+    height: 28px;
+    border: 1px solid #e3e3e3;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    cursor: pointer;
+  }
+  .StateColor{
+    background-color: $ora;
+    color: #fff;
+  }
+
+  .CarBasic{
+    width: 100%;
+  }
+
+  .BasicTit{
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #4A4A4A;
+    font-size: 14px;
+  }
+  .BasicTit>span{
+    background-color: $ora;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+  }
+  .BasicTit>strong {
+    color: #A2A7B2;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 10px;
+  }
+
+  .CarBasicTuLi{
+    width: 100%;
+    p{
+      font-size: 12px;
+    }
+
+  }
+ ::v-deep .area-cascader-wrap{
+    float:left!important;
+    line-height: 1;
+  }
+ ::v-deep .area-select.small{
+    width: 200px;
+  }
+ ::v-deep   .el-upload--picture-card{
+    width: 80px!important;
+    height: 80px!important;
+    line-height: 80px;
+  }
+  .CarBasicTuLi ul{
+    width: 100%;
+    display: flex;
+  }
+  .CarBasicTuLi li{
+    width: 148px;
+    height: 178px;
+    margin-right: 20px;
+  }
+  .CarBasicTu{
+
+    .t{
+      line-height: 100px;
+    }
+    .tips{
+      font-size: 24px;
+      color: #888
+    }
+    &>div:first-child{
+      display: flex;
+    }
+  }
+  .imgTool{
+    background: rgba(0,0,0,.6);
+    i{
+      color:#fff;
+      font-size: 24px;
+      margin-left: 5px;
+    }
+    font-size: 28px;
+    line-height: 2;
+    position: relative;
+  }
+  .CarBasicTuLi li>p{
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+  }
+  .CarBasicTuLi li strong{
+    color: $ora;
+  }
+  .CarBasicFrom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .CarBasicFrom>div{
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .CarBasicFrom>div:nth-child(1)>div{
+    width: 50%;
+  }
+  /*
+
+    .CarBasicFrom>div>div{
+      color: #666;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    .CarBasicFrom>div>div:nth-child(1){
+      float: left;
+    }
+    .CarBasicFrom>div>div:nth-child(2){
+      float: right;
+    }
+    .CarBasicFrom>div>div>span{
+      display: inline-block;
+      width: 80px;
+      height: 26px;
+      line-height: 26px;
+      text-align: right;
+      margin-right: 10px;
+      !*float: left;*!
+    }
+    .CarBasicFrom>div>div>strong{
+      font-weight: 400;
+      margin-left: 5px;
+      color: #666;
+    }
+    .CarBasicFrom>div>div>span>strong{
+      color: $ora;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  */
+
+
+  .CarRepair{
+    width: 100%;
+    line-height: 26px;
+  }
+  .CarRepair>div{
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .CarRepair>div>div{
+    height: 36px;
+    color: #666;
+    font-size: 12px;
+  }
+  .CarRepair>div>div:nth-child(1){
+    float: left;
+  }
+  .CarRepair>div>div:nth-child(2){
+    float: right;
+  }
+  .CarRepair>div>div>span{
+    display: inline-block;
+    width: 96px;
+    height: 36px;
+    line-height: 36px;
+    text-align: right;
+    margin-right: 10px;
+    float: left;
+  }
+  .CarRepair>div>div>strong{
+    font-weight: 400;
+    margin-left: 5px;
+    color: #666;
+  }
+  .CarRepair>div>div>span>strong{
+    color: $ora;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .AddBuyMode{
+    width: 300px;
+    height: 36px;
+  }
+  .AddBuyModeLi{
+    float: left;
+    margin-right: 10px;
+    width: 76px;
+    height: 26px;
+    border: 1px solid #e3e3e3;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+  }
+
+
+  .AddCarSource{
+    width: 500px;
+    height: 36px;
+  }
+  .AddCarSourceLi{
+    float: left;
+    margin-right: 10px;
+    width: 76px;
+    height: 26px;
+    border: 1px solid #e3e3e3;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+  }
+  .AddBuyLiCli{
+    border: 1px solid $ora;
+    color: $ora;
+  }
+
+
+  .OnlineRelease{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+  }
+  .OnReTitle{
+    width: 100%;
+    height: 22px;
+    color: #4A4A4A;font-size: 16px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  .OnReTitle>div{
+    width: 5px;
+    height: 14px;
+    background-color: $ora;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+  }
+  .OnReinfor{
+
+  }
+  .NetSalesPe{
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  .NetSalesPe>span{
+    display: inline-block;
+    width: 100px;
+    height: 26px;
+    text-align: right;
+    font-size: 14px;
+    color: #666666;
+    margin-right: 5px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+  .NetSalesPe>span>strong{
+    margin-right: 5px;
+    color: $ora;
+    line-height: 26px;
+  }
+
+  .OnReinfor>span{
+    display: inline-block;
+    width: 100px;
+    height: 26px;
+    float: left;
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+  }
+  .BusPost{
+    line-height: 21px;
+    float: left;
+    margin-bottom: 30px;
+  }
+  .BusPost>p{
+    color: #666666;
+    font-size: 14px;
+  }
+  .PostTemplate{
+    clear: both;
+
+    height: 26px;
+    margin-left: 40px;
+  }
+  .PostTemplate>div{
+    width: 125px;
+    height: 55px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 55px;
+    color: #444;
+    border:1px solid #777;
+    padding:0 10px;
+    margin-right: 20px;
+    float: left;
+    cursor: pointer;
+  }
+  .PostTemplate>div:hover{
+    border: 1px solid #FF3434;
+    color:#FF3434
+  }
+
+  .inputText{
+    height: 270px;
+    /*background-color: red;*/
+    width: 90vw;
+    border:1px solid #ccc;
+    overflow: auto;
+    margin-top: 10px;
+  }
+  .inputText>textarea{
+    color: #333;
+    width: 90vw;
+    font-size: 14px;
+    line-height: 22px;
+    padding:5px;
+
+  }
+
+
+  .step{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    bottom: 0;
+    box-shadow: 0 0 15px 3px rgba(221,221,221,0.5);;
+  }
+  .stepBox{
+    height: 40px;
+    display: flex;
+  }
+  .stepBox>div{
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background-color: $ora;
+    line-height: 30px;
+    margin:15px auto 0;
+    cursor:pointer;
+
+
+  }
+  .imgList > span {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .imgList >span >div{
+    width: 220px;
+    height: 165px;
+    border: 1px solid #969696;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+  }
+  .back{
+    position: absolute;
+    right:20px;
+    top:50%;
+    font-size: 14px;
+    transform: translateY(-50%);
+  }
+  .nbt{
+    font-size: 14px;
+    border: 1px dashed #ccc;
+    background: none;
+    width: vw(200);
+    height: vw(200);
+    padding:5px;
+    margin-top: vw(30);
+    margin-bottom:vw(30);
+  }
+
+  .moreBtn{
+    font-size: 16px;
+    font-weight: 500;
+    color: #444444;
+    line-height: 2;
+    text-align: center;
+  }
+
+
+  .showMoreOpt>div{
+    color: #666;
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  .showMoreOpt>div:nth-child(1){
+    float: left;
+  }
+  .showMoreOpt>div:nth-child(2){
+    float: right;
+  }
+  .showMoreOpt>div>div>span{
+    display: inline-block;
+
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    margin-right: 10px;
+    /*float: left;*/
+  }
+  .showMoreOpt>div>div>strong{
+    font-weight: 400;
+    margin-left: 5px;
+    color: #666;
+  }
+  .showMoreOpt>div>div>span>strong{
+    color: $ora;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+ ::v-deep {
+    .md-field-item-title{
+
+    }
+    .md-input-item-fake, .md-input-item-input{
+      font-size: 28px;
+    }
+    .md-field-item.is-solid .md-field-item-title{
+
+    }
+    .md-field{
+      padding: 5px 10px;
+    }
+    .vinIpt .el-input__inner{
+      border:none;
+      text-align: right;
+    }
+
+  }
+
+  .CarInState{
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+  }
+  .CarInLi{
+    width: 125px;
+    height: 60px;
+    border: 1px solid #e3e3e3;
+    cursor:pointer;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .CarInClick{
+    border: 1px solid $ora;
+    color: $ora;
+  }
+  .checkSele{
+    width: 160px;
+    height: 36px;
+    line-height: 36px;
+
+  }
+  .checkSeleDate{
+    width: 160px;
+    height: 30px;
+    margin-top: 2px;
+  }
+  .AddCarClass{
+    width: 160px;
+    height: 36px;
+    line-height: 36px;
+  }
+  .CarInLiCo{
+    width: 26px;
+    height: 26px;
+    float: left;
+  }
+
+  .content{
+    height: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .coloritem{
+    width: 130px;
+    font-size: 28px;
+  }
+
+  .complete{
+    background: $mainColor;
+    border:$mainColor;
+    &::after{
+      border:$mainColor
+    }
+  }
+}
+
+.waBox{
+  background: #e3eeec;
+  .t{
+    text-align: center;
+    line-height: 2;
+    font-size: 40px;
+    color:#666;
+  }
+  .b{
+    width: 730px;
+    height: 470px;
+    margin:0 auto;
+    border: 1px solid #e5e6e7;
+    textarea{
+      height: 100%;
+      width: 100%;
+      display: block;
+      padding:30px;
+      box-sizing: border-box;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+
+ ::v-deep .md-tab-bar-item{
+    min-height: 8vw;
+  }
+ ::v-deep {
+    .md-tabs{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .md-tabs-content{
+      height: 0;
+      flex-grow: 1;
+    }
+    .md-tab-pane{
+      height: 100%;
+    }
+  }
+  .btns{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    &>div{
+      line-height: 80px;
+      text-align: center;
+      width: 50%;
+
+    }
+    &>div:last-child{
+      background: $mainColor;
+      color:#fff
+    }
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+.md-tag {
+  &>div{
+    padding:5px 10px!important;
+  }
+}
+.accNavtag{
+  .subTitle{
+   display: block;
+    width: 116px;
+    height: 56px;
+    border-radius: 8px;
+    font-size: 32px;
+    color: #fff;
+    background:#FF4C4C ;
+    line-height: 56px;
+    text-align: center;
+  }
+}
+
+.editList .md-field,.addEdit .md-field{
+  padding: 0 32px;
+  margin-top: 80px;
+  .md-field-item-title{
+    font-size: 28px;
+    color: #666;
+  }
+  input{
+    font-size: 28px;
+    color: #666;
+  }
+  .md-check-base-box{
+    width: 124px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #666;
+    box-sizing: border-box;
+  }
+  .md-check-box.is-checked{
+    color: #FF3434;
+    border-color: #FF3434;
+  }
+  .md-check-box .md-tag .quarter-bg{
+    background: #FF3434;
+  }
+  .md-field-item:last-child{
+    padding: 36px 0;
+    .md-check-base-box{
+      width: 160px;
+      height: 60px;
+      margin-left: 40px;
+      margin-top: 0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+    }
+    .md-check-box.is-checked{
+      color: #FF3434;
+      border-color: #FF3434;
+    }
+    .md-check-box.is-checked .md-tag .shape-quarter.size-tiny{
+      width: 16px;
+      height: 16px;
+      .right .md-icon.icon-font.md{
+        font-size: 12px;
+      }
+    }
+    .md-check-box .md-tag .quarter-bg{
+      background: #FF3434;
+    }
+  }
+  .md-field-item:last-child .md-field-item-content::before{
+    display: none;
+  }
+}
+.addMt .md-field{
+  margin-top: 48px;
+}
+.item{
+  .brand{
+    border: none;
+    .el-button{
+      border: none;
+    }
+  }
+}
